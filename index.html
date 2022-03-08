@@ -120,7 +120,7 @@
       <!-- ===== SHARE SECTION ===== -->
 
       <!-- ===== DECORATION SECTION ===== -->
-      <section class="decoration section">
+      <section class="decoration section" id="decoration">
         <div class="decoration__container container grid gap-12">
           <div class="decoration__data text-center">
             <h1 class="decoration__titl section-title">
@@ -203,7 +203,7 @@
       <!-- ===== DECORATION SECTION ===== -->
 
       <!-- ===== ACCESSORY SECTION ===== -->
-      <section class="accessory section">
+      <section class="accessory section" id="accessory">
         <div class="accessory__container container grid gap-12">
           <div class="accessory__data text-center">
             <h1 class="accessory__title section-title">
@@ -387,6 +387,45 @@
         </div>
       </section>
       <!-- ===== ACCESSORY SECTION ===== -->
+
+      <!-- ===== SEND SECTION ===== -->
+      <section class="send section bg-red" id="send">
+        <div class="send__container container grid gap-12">
+          <div class="send__content grid gap-8">
+            <div class="send__data text-center">
+              <h1 class="send__title section-title text-white">
+                Send Gift Now
+              </h1>
+              <p class="send__text text-[15px] text-white leading-text">
+                Start giving away before the holidays are over. Write the home
+                of the person who will send the gift.
+              </p>
+            </div>
+
+            <form
+              action=""
+              class="send__direction flex justify-between items-center p-2 bg-white rounded-[1rem] gap-4"
+            >
+              <input
+                type="text"
+                placeholder="Enter your email"
+                class="send__direction-input flex items-center w-full p-4 bg-white rounded-[.8rem] text-[15px] text-black font-semibold placeholder:text-[15px] placeholder:text-[rgba(0,0,0,0.5)] placeholder:font-semibold"
+                onkeyup="this.value = this.value.toLowerCase()"
+              />
+              <button class="send__direction-button button button-fill">
+                Send
+              </button>
+            </form>
+          </div>
+
+          <img
+            src="./src/img/send.png"
+            alt=""
+            class="send__img w-[300px] justify-self-center"
+          />
+        </div>
+      </section>
+      <!-- ===== SEND SECTION ===== -->
     </main>
 
     <!-- ===== MAIN JS ===== -->
