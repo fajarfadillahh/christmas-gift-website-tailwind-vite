@@ -45,3 +45,12 @@
 .header__menu.show-menu {
   @apply opacity-100 scale-y-100;
 }
+/* Sticky Header */
+.header.sticky-header {
+  @apply shadow-[2px_0_12px_rgba(0,0,0,0.1)];
+}
+
+/* ===== SCROLLUP SECTION ===== */
+.scrollup.scroll-action {
+  @apply opacity-100;
+}
