@@ -54,3 +54,10 @@
 .scrollup.scroll-action {
   @apply opacity-100;
 }
+
+/* ===== SELECTION ===== */
+::selection {
+  @apply bg-[rgba(218,_37,_53,_0.7)] text-white;
+
+  text-shadow: none;
+}
