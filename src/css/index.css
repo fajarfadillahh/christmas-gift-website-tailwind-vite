@@ -13,12 +13,12 @@
     @apply py-24;
   }
   .section-title {
-    @apply text-[28px] text-black font-bold mb-4;
+    @apply text-[28px] text-black font-bold mb-4 sm:text-[32px];
   }
 
   /* Button Class */
   .button {
-    @apply flex justify-center items-center py-4 px-8 text-[15px] text-white font-semibold rounded-[15px] transition-all duration-500;
+    @apply flex justify-center items-center py-4 px-8 text-[15px] text-white font-semibold rounded-[15px] transition-all duration-500 sm:text-[16px];
   }
   .button-fill {
     @apply bg-red hover:bg-[#c42130];
@@ -33,7 +33,7 @@
 }
 /* Header Link Active */
 .header__link {
-  @apply text-[15px] text-black;
+  @apply text-[15px] text-black sm:text-[16px];
 }
 .header__link.active-link {
   @apply relative text-red font-semibold;
