@@ -33,8 +33,11 @@
           >Christmas Gift</a
         >
 
-        <div class="header__menu" id="header-menu">
-          <ul class="header__list flex flex-col gap-6">
+        <div
+          class="header__menu md:flex md:items-center md:gap-6"
+          id="header-menu"
+        >
+          <ul class="header__list flex flex-col gap-6 md:flex-row">
             <li class="header__item">
               <a href="#" class="header__link active-link">Home</a>
             </li>
@@ -49,13 +52,13 @@
             </li>
           </ul>
 
-          <a href="#" class="header__button button button-fill mt-6"
+          <a href="#" class="header__button button button-fill mt-6 md:mt-0"
             >Get Started</a
           >
         </div>
 
         <div
-          class="header__toggle inline-flex text-[1.5rem] text-black cursor-pointer"
+          class="header__toggle inline-flex text-[1.5rem] text-black cursor-pointer md:hidden"
           id="header-toggle"
         >
           <i class="bx bx-menu"></i>
@@ -66,16 +69,18 @@
 
     <main class="main">
       <!-- ===== HOME SECTION ===== -->
-      <section class="home pt-28 pb-24" id="home">
-        <div class="home__container container grid gap-12">
+      <section class="home pt-28 pb-24 md:pt-40" id="home">
+        <div
+          class="home__container container grid gap-12 md:grid md:grid-cols-2 md:items-center"
+        >
           <img
             src="./src/img/home.png"
             alt=""
-            class="home__img w-[300px] justify-self-center sm:w-[360px]"
+            class="home__img w-[300px] justify-self-center sm:w-[360px] md:w-auto md:order-2"
           />
 
           <div
-            class="home__data text-center xs:w-[400px] xs:justify-self-center sm:xs:w-[480px]"
+            class="home__data text-center xs:w-[400px] xs:justify-self-center sm:xs:w-[480px] md:w-auto md:text-left"
           >
             <h1
               class="home__title text-[36px] text-black font-bold mb-4 leading-title xs:text-[42px]"
@@ -98,9 +103,11 @@
 
       <!-- ===== SHARE SECTION ===== -->
       <section class="share section" id="share">
-        <div class="share__container container grid gap-12">
+        <div
+          class="share__container container grid gap-12 md:grid md:grid-cols-2 md:items-center"
+        >
           <div
-            class="share__data text-center xs:w-[400px] xs:justify-self-center sm:xs:w-[480px]"
+            class="share__data text-center xs:w-[400px] xs:justify-self-center sm:xs:w-[480px] md:w-auto md:text-left"
           >
             <h1 class="share__title section-title">
               Sharing Is The Best <br />
@@ -121,7 +128,7 @@
           <img
             src="./src/img/shared.png"
             alt=""
-            class="share__img w-[300px] justify-self-center sm:w-[360px]"
+            class="share__img w-[300px] justify-self-center sm:w-[360px] md:w-auto"
           />
         </div>
       </section>
@@ -140,7 +147,7 @@
           </div>
 
           <div
-            class="decoration__group grid grid-cols-[.8fr] justify-center gap-8 xs:grid-cols-[.7fr] sm:grid-cols-[.6fr]"
+            class="decoration__group grid grid-cols-[.8fr] justify-center gap-8 xs:grid-cols-[.7fr] sm:grid-cols-[.6fr] md:grid-cols-2"
           >
             <div
               class="decoration__item grid gap-4 py-8 px-4 bg-white rounded-[2rem] shadow-[0_4px_20px_rgba(0,0,0,0.1)]"
@@ -224,7 +231,7 @@
           </div>
 
           <div
-            class="accessory__group grid grid-cols-[.8fr] justify-center gap-8 xs:grid-cols-[.7fr] sm:grid-cols-[.6fr]"
+            class="accessory__group grid grid-cols-[.8fr] justify-center gap-8 xs:grid-cols-[.7fr] sm:grid-cols-[.6fr] md:grid-cols-2"
           >
             <div
               class="accessory__item relative grid gap-4 p-8 bg-white rounded-[2rem] shadow-[0_4px_20px_rgba(0,0,0,0.1)]"
@@ -401,11 +408,13 @@
       <!-- ===== ACCESSORY SECTION ===== -->
 
       <!-- ===== SEND SECTION ===== -->
-      <section class="send section bg-red" id="send">
-        <div class="send__container container grid gap-12">
+      <section class="send section bg-red md:bg-transparent" id="send">
+        <div
+          class="send__container container grid gap-12 md:bg-red md:rounded-[2rem] md:p-8 md:grid-cols-2 md:items-center"
+        >
           <div class="send__content grid gap-8">
             <div
-              class="send__data text-center xs:w-[400px] xs:justify-self-center sm:w-[480px]"
+              class="send__data text-center xs:w-[400px] xs:justify-self-center sm:w-[480px] md:w-auto md:text-left"
             >
               <h1 class="send__title section-title text-white">
                 Send Gift Now
@@ -420,7 +429,7 @@
 
             <form
               action=""
-              class="send__direction overflow-hidden flex justify-between items-center p-2 bg-white rounded-[1rem] gap-4 xs:w-[400px] xs:justify-self-center sm:w-[480px]"
+              class="send__direction overflow-hidden flex justify-between items-center p-2 bg-white rounded-[1rem] gap-4 xs:w-[400px] xs:justify-self-center sm:w-[480px] md:w-auto"
             >
               <input
                 type="text"
@@ -437,7 +446,7 @@
           <img
             src="./src/img/send.png"
             alt=""
-            class="send__img w-[300px] justify-self-center sm:w-[360px]"
+            class="send__img w-[300px] justify-self-center sm:w-[360px] md:w-auto"
           />
         </div>
       </section>
