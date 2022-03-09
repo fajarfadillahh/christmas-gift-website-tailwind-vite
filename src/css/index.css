@@ -13,7 +13,7 @@
     @apply py-24;
   }
   .section-title {
-    @apply text-[28px] text-black font-bold mb-4 sm:text-[32px];
+    @apply text-[28px] text-black font-bold mb-4 sm:text-[32px] xl:text-[38px];
   }
 
   /* Button Class */
