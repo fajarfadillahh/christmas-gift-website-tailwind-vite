@@ -27,7 +27,7 @@
       id="header"
     >
       <div
-        class="header__container container h-24 flex justify-between items-center"
+        class="header__container container h-24 flex justify-between items-center lg:relative"
       >
         <a href="#" class="header__logo text-[18px] text-black font-bold"
           >Christmas Gift</a
@@ -37,7 +37,9 @@
           class="header__menu md:flex md:items-center md:gap-6"
           id="header-menu"
         >
-          <ul class="header__list flex flex-col gap-6 md:flex-row">
+          <ul
+            class="header__list flex flex-col gap-6 md:flex-row lg:absolute lg:left-[50%] translate-x-[-50%] lg:gap-10"
+          >
             <li class="header__item">
               <a href="#" class="header__link active-link">Home</a>
             </li>
@@ -83,7 +85,7 @@
             class="home__data text-center xs:w-[400px] xs:justify-self-center sm:xs:w-[480px] md:w-auto md:text-left"
           >
             <h1
-              class="home__title text-[36px] text-black font-bold mb-4 leading-title xs:text-[42px]"
+              class="home__title text-[36px] text-black font-bold mb-4 leading-title xs:text-[42px] lg:text-[56px]"
             >
               Send A Gift For Christmas
             </h1>
@@ -147,7 +149,7 @@
           </div>
 
           <div
-            class="decoration__group grid grid-cols-[.8fr] justify-center gap-8 xs:grid-cols-[.7fr] sm:grid-cols-[.6fr] md:grid-cols-2"
+            class="decoration__group grid grid-cols-[.8fr] justify-center gap-8 xs:grid-cols-[.7fr] sm:grid-cols-[.6fr] md:grid-cols-2 lg:grid-cols-3"
           >
             <div
               class="decoration__item grid gap-4 py-8 px-4 bg-white rounded-[2rem] shadow-[0_4px_20px_rgba(0,0,0,0.1)]"
@@ -231,7 +233,7 @@
           </div>
 
           <div
-            class="accessory__group grid grid-cols-[.8fr] justify-center gap-8 xs:grid-cols-[.7fr] sm:grid-cols-[.6fr] md:grid-cols-2"
+            class="accessory__group grid grid-cols-[.8fr] justify-center gap-8 xs:grid-cols-[.7fr] sm:grid-cols-[.6fr] md:grid-cols-2 lg:grid-cols-3"
           >
             <div
               class="accessory__item relative grid gap-4 p-8 bg-white rounded-[2rem] shadow-[0_4px_20px_rgba(0,0,0,0.1)]"
@@ -408,7 +410,7 @@
       <!-- ===== ACCESSORY SECTION ===== -->
 
       <!-- ===== SEND SECTION ===== -->
-      <section class="send section bg-red md:bg-transparent" id="send">
+      <section class="send section bg-red px-6 md:bg-transparent" id="send">
         <div
           class="send__container container grid gap-12 md:bg-red md:rounded-[2rem] md:p-8 md:grid-cols-2 md:items-center"
         >
@@ -429,7 +431,7 @@
 
             <form
               action=""
-              class="send__direction overflow-hidden flex justify-between items-center p-2 bg-white rounded-[1rem] gap-4 xs:w-[400px] xs:justify-self-center sm:w-[480px] md:w-auto"
+              class="send__direction overflow-hidden flex justify-between items-center p-2 bg-white rounded-[1rem] gap-4 xs:w-[400px] xs:justify-self-center sm:w-[480px] md:w-auto md:justify-self-start"
             >
               <input
                 type="text"
